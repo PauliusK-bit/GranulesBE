@@ -15,9 +15,11 @@ app.use(express.json());
 
 const userAPIRoutes = require("./api/userRoutes");
 const itemsAPIRoutes = require("./api/itemRoutes");
+const categoriesAPIRoutes = require("./api/categoryRoutes");
 
 app.use("/api/users", userAPIRoutes);
 app.use("/api/items", itemsAPIRoutes);
+app.use("/api/categories", categoriesAPIRoutes);
 
 app.use(express.static("public"));
 
